@@ -1,0 +1,76 @@
+{
+  "instruments": [
+    {
+      "id": "1",
+      "title": "Fender Stratocaster",
+      "image": "veggie_carbonara.jpg",
+      "price": "Between $500 and $2,000",
+      "description": "One of the most iconic guitars, known for its versatile sound and classic double-cutaway design.",
+      "acoustic": false
+    },
+    {
+      "id": "2",
+      "title": "Gibson Les Paul",
+      "image": "veg_stir_fry.jpg",
+      "price": "Between $1,000 and $4,000",
+      "description": "Recognized for its solid construction, exceptional sustain, and powerful tone, especially suitable for rock and blues.",
+      "acoustic": false
+    },
+    {
+      "id": "3",
+      "title": "Ibanez RG550",
+      "image": "veg_alfredo.jpg",
+      "price": "Between $500 and $1,500",
+      "description": "A popular guitar among metal guitarists, known for its fast playability and powerful pickups.",
+      "acoustic": false
+    },
+    {
+      "id": "4",
+      "title": "PRS SE Custom 24",
+      "image": "mushroom_risotto.jpg",
+      "price": "Between $700 and $1,500",
+      "description": "Combines PRS's elegant design with a more affordable price, offering tonal versatility and playing comfort.",
+      "acoustic": false
+    },
+    {
+      "id": "5",
+      "title": "Epiphone Les Paul Standard",
+      "image": "veg_lentil_soup.jpg",
+      "price": "Between $400 and $800",
+      "description": "An affordable alternative to the Gibson Les Paul, maintaining many classic features.",
+      "acoustic": false
+    },
+    {
+      "id": "6",
+      "title": "Jackson Soloist SL2",
+      "image": "grilled_mushrooms.jpg",
+      "price": "Between $800 and $1,500",
+      "description": "Designed to meet the demands of metal guitarists, with a unique body design and high-gain pickups.",
+      "acoustic": false
+    },
+    {
+      "id": "7",
+      "title": "Gretsch G2622 Streamliner",
+      "image": "roasted_veg_salad.jpg",
+      "price": "Between $500 and $1,000",
+      "description": "A semi-hollow guitar with a distinctive sound and retro style, great for styles like rockabilly and jazz.",
+      "acoustic": false
+    },
+    {
+      "id": "8",
+      "title": "ESP LTD EC-1000",
+      "image": "veggie_tacos.jpg",
+      "price": "Between $800 and $1,500",
+      "description": "A guitar with a sleek finish, suitable for a variety of musical styles, especially rock and metal.",
+      "acoustic": false
+    },
+    {
+      "id": "9",
+      "title": "Taylor T5z Classic",
+      "image": "chocolate_cookies.jpg",
+      "price": "Between $1,500 and $3,000",
+      "description": "A hybrid acoustic/electric guitar, offering tonal versatility for musicians seeking a range of sounds.",
+      "acoustic": true
+    }
+  ]
+}
