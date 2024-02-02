@@ -20,6 +20,8 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import { buttonVariants } from "@/components/ui/button"
+import Link from "next/link";
 
 interface Instruments {
   title: string,
@@ -75,7 +77,11 @@ export default async function Home() {
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction>Continue</AlertDialogAction>
+                    <AlertDialogAction>
+                    <Button asChild>
+                      <Link href={`${instrument.link}`}>Continue</Link>
+                    </Button>
+                    </AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>
