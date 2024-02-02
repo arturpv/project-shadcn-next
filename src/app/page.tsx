@@ -26,6 +26,7 @@ interface Instruments {
   image: string,
   price: string,
   description: string,
+  link: string,
   acoustic: boolean,
   id: string
 }
