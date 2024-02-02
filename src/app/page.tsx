@@ -23,7 +23,7 @@ import {
 import { buttonVariants } from "@/components/ui/button"
 import Link from "next/link";
 
-interface Instruments {
+interface Instrument {
   title: string,
   image: string,
   price: string,
@@ -33,7 +33,7 @@ interface Instruments {
   id: string
 }
 
-async function getInstruments(): Promise<Instruments[]> {
+async function getInstruments(): Promise<Instrument[]> {
   const result = await fetch('http://localhost:4000/instruments')
 
   // delay response
@@ -48,22 +48,22 @@ export default async function Home() {
   return (
     <main>
       <div className="grid grid-cols-3 gap-8">
-        {instrument.map(instrument => (
-          <Card key={instrument.id} className="flex flex-col justify-between">
+        {instrument.map(instruments => (
+          <Card key={instruments.id} className="flex flex-col justify-between">
             <CardHeader className="flex-row gap-4 items-center">
               <Avatar>
-                <AvatarImage src={`/img/${instrument.image}`} alt="@shadcn" />
+                <AvatarImage src={`/img/${instruments.image}`} alt="@shadcn" />
                 <AvatarFallback>
-                  {instrument.title.slice(0,2)}
+                  {instruments.title.slice(0,2)}
                 </AvatarFallback>
               </Avatar>
               <div>
-                <CardTitle>{instrument.title}</CardTitle>
-                <CardDescription>{instrument.price}</CardDescription>
+                <CardTitle>{instruments.title}</CardTitle>
+                <CardDescription>{instruments.price}</CardDescription>
               </div>
             </CardHeader>
             <CardContent>
-              <p>{instrument.description}</p>
+              <p>{instruments.description}</p>
             </CardContent>
             <CardFooter className="flex justify-between">
              <AlertDialog>
@@ -72,21 +72,21 @@ export default async function Home() {
                   <AlertDialogHeader>
                     <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
                     <AlertDialogDescription>
-                      You will send to another site!
+                    You will be send to another site!
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
                     <AlertDialogAction>
                     <Button asChild>
-                      <Link href={`${instrument.link}`}>Continue</Link>
+                      <Link href={`${instruments.link}`}>Continue</Link>
                     </Button>
                     </AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>
               
-                {instrument.acoustic && <Badge variant="secondary">ACOUSTIC!</Badge>}
+                {instruments.acoustic && <Badge variant="secondary">ACOUSTIC!</Badge>}
             </CardFooter>
           </Card>
         ))}
