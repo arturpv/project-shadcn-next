@@ -1,4 +1,5 @@
 import { Instruments } from "@/components/instruments";
+import instruments from "../../data/instruments"
 
 export interface Instrument {
   title: string;
@@ -10,17 +11,6 @@ export interface Instrument {
   id: string;
 }
 
-async function getInstruments(): Promise<Instrument[]> {
-  const result = await fetch("http://localhost:4000/instruments");
-
-  // delay response
-  await new Promise((resolve) => setTimeout(resolve, 3000));
-
-  return result.json();
-}
-
-export default async function Home() {
-  const instruments = await getInstruments();
-
+export default function Home() {
   return <Instruments instruments={instruments} />;
 }

@@ -1,11 +1,10 @@
-{
-    "instruments": [
-      {
+export const instruments  = [
+    {
         "id": "1",
         "title": "Fender Stratocaster",
         "image": "Fender_Stratocaster.jpg",
         "price": "Between $500 and $2,000",
-          "link": "https://www.pridemusicshop.com.br/produto/fender/guitarras/10172586/",
+        "link": "https://www.pridemusicshop.com.br/produto/fender/guitarras/10172586/",
         "description": "One of the most iconic guitars, known for its versatile sound and classic double-cutaway design.",
         "acoustic": false
       },
@@ -81,5 +80,6 @@
         "description": "A hybrid acoustic/electric guitar, offering tonal versatility for musicians seeking a range of sounds.",
         "acoustic": true
       }
-    ]
-  }
+  ];
+  
+  export default instruments;
